@@ -136,7 +136,7 @@ public class Silly implements Comparable<Silly>{
      */
     @Override
     public String toString(){
-        return self.name
+        return self.name;
     }
 
     /**
