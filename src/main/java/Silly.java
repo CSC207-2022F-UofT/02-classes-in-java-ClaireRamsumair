@@ -161,6 +161,7 @@ public class Silly implements Comparable<Silly>{
         }
 
         Silly other = (Silly) o; // To access .name of o, we need to cast it.
+        return this.name.equals(other.name);
 
         // Hint: to compare strings, we need to use .equals()
         //       e.g. s1.equals(s2)
@@ -197,6 +198,9 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
+         int num1 = this.name.length();
+         int num2 = other.name.length();
+         return num1 - num2;
     }
 
     /*
